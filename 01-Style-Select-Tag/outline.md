@@ -1,0 +1,9 @@
+- problems with styling related to web-kit
+  - pics showing styling inconsistencies
+- solutions on CSS-tricks too complicated
+- explain overall concept
+- show code snippet
+  - a snippet with just CSS
+  - a snippet with just tailwind
+- pic of the final result
+- create npm package
