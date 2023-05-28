@@ -1,0 +1,24 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "A template with boilerplate structure for Hashnode's Github as source feature",
+  "main": "index.js",
+  "scripts": {
+    "pub": "cross-post run -l -pu",
+    "pub:no-img": "cross-post run -l --ignore-image -pu",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/palmerusaf/blog.git"
+  },
+  "author": "Branden Palmer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/palmerusaf/blog/issues"
+  },
+  "homepage": "https://github.com/palmerusaf/blog#readme",
+  "dependencies": {
+    "cross-post-blog": "github:palmerusaf/cross-post#fix/issue#43"
+  }
+}
