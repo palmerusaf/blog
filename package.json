@@ -4,8 +4,7 @@
   "description": "A template with boilerplate structure for Hashnode's Github as source feature",
   "main": "index.js",
   "scripts": {
-    "pub": "cross-post run -l -pu",
-    "pub:no-img": "cross-post run -l --ignore-image -pu",
+    "pub": "cross-post run --local --ignore-image --public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
