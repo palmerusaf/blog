@@ -3,7 +3,6 @@ title: "How to style a <select/> tag the easy way."
 datePublished: Mon May 29 2023 13:55:34 GMT+0000 (Coordinated Universal Time)
 cuid: cli8wwrx909qpk2nvbocj26g2
 slug: how-to-style-a-lessselectgreater-tag-the-easy-way
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1685368643613/c94d6a09-d066-4f4e-b2a5-1e86ff915461.png
 
 ---
 
