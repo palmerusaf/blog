@@ -11,13 +11,14 @@
   - [Code](#code)
   - [Result](#result)
 - [Conclusion](#conclusion)
+
 <!--toc:end-->
 
 ## Problem
 
 Form controls are notoriously difficult to style, this is especially true with the `<select/>` tag. Between the browsers Firefox respects your style choices the most, followed by Chrome, then Web-kit. The results can be seen below.
 
-![problem demo](./problem-demo.png)
+![problem demo](https://github.com/palmerusaf/blog/blob/main/01-Style-Select-Tag/problem-demo.png?raw=true)
 
 As you can see above Web-kit in particular is a mess.
 
@@ -50,7 +51,7 @@ Just make a mask.
 
 ### The Mask
 
-![mask meme](./mask-meme.jpg)
+![mask meme](https://github.com/palmerusaf/blog/blob/main/01-Style-Select-Tag/mask-meme.jpg?raw=true)
 
 A mask, also known as a wrapper, is a stylable non-semantic element that goes over your select tag. The idea is you style the div however you want and then you sneak your select tag inside it like a ninja.
 
@@ -109,7 +110,7 @@ And this is what the CSS would look like.
 
 ### Result
 
-![solution demo](./solution-demo.png)
+![solution demo](https://github.com/palmerusaf/blog/blob/main/01-Style-Select-Tag/solution-demo.png?raw=true)
 
 ## Conclusion
 
