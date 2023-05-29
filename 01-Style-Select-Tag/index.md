@@ -6,7 +6,11 @@
 - [The Hard Way](#the-hard-way)
   - [Build your own](#build-your-own)
   - [Import from a Library](#import-from-a-library)
-- [The Easy Way](#the-easy-way) - [The Mask](#the-mask) - [Code](#code) - [Result](#result)
+- [The Easy Way](#the-easy-way)
+  - [The Mask](#the-mask)
+  - [Code](#code)
+  - [Result](#result)
+- [Conclusion](#conclusion)
 <!--toc:end-->
 
 ## Problem
@@ -48,7 +52,7 @@ Just make a mask.
 
 ![mask meme](./mask-meme.jpg)
 
-A mask, also known as a wrapper, is a stylable non-semantic element that goes over your select tag.
+A mask, also known as a wrapper, is a stylable non-semantic element that goes over your select tag. The idea is you style the div however you want and then you sneak your select tag inside it like a ninja.
 
 ### Code
 
@@ -78,6 +82,7 @@ And this is what the CSS would look like.
   padding: 2px 4px;
   background-color: #ccc;
   border-radius: 9999px;
+  cursor: pointer;
 }
 
 .angle-bracket {
@@ -99,10 +104,13 @@ And this is what the CSS would look like.
   width: 100%;
   height: 100%;
   opacity: 0;
-  cursor: pointer;
 }
 ```
 
 ### Result
 
 ![solution demo](./solution-demo.png)
+
+## Conclusion
+
+Using a div as a mask, along with positioning tricks, is much easier than trying to fight the browsers. Anyways, I hope you found this article helpful. Let me know what you think in the comments.
