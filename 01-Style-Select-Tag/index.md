@@ -4,6 +4,9 @@
 
 - [Problem](#problem)
 - [The Hard Way](#the-hard-way)
+  - [Build your own](#build-your-own)
+  - [Import from a Library](#import-from-a-library)
+- [The Easy Way](#the-easy-way) - [The Mask](#the-mask) - [Code](#code) - [Result](#result)
 <!--toc:end-->
 
 ## Problem
@@ -35,4 +38,71 @@ If you go this route you can save lots of time. If it's a popular library you be
 
 One of the drawbacks is that you're at the mercy of the maintainer. You will also have to take the time to learn the library's API. The component might not fit exactly with your existing styling and it can be difficult to customize. You also could be shipping lots of unnecessary code.
 
-And if you want to style/remove elements inside the style box you can forget about it. WYSIWYG.
+## The Easy Way
+
+What if all you want to do is style your select button and you don't care if the select options are styled?
+
+Just make a mask.
+
+### The Mask
+
+![mask meme](./mask-meme.jpg)
+
+A mask, also known as a wrapper, is a stylable non-semantic element that goes over your select tag.
+
+### Code
+
+This is what the HTML would look like.
+
+```html
+<div class="select-container">
+  <span class="angle-bracket rotate-left"> &lt; </span>
+  <span>Select</span>
+  <span class="angle-bracket rotate-right"> &gt; </span>
+  <select class="hidden-select">
+    <option selected value="">Select</option>
+    <option value="1">Value 1</option>
+    <option value="2">Value 2</option>
+    <option value="3">Value 3</option>
+  </select>
+</div>
+```
+
+And this is what the CSS would look like.
+
+```css
+.select-container {
+  display: flex;
+  position: relative;
+  gap: 2px;
+  padding: 2px 4px;
+  background-color: #ccc;
+  border-radius: 9999px;
+}
+
+.angle-bracket {
+  transition-duration: 300ms;
+}
+
+.select-container:hover .rotate-left {
+  transform: rotate(-90deg);
+}
+
+.select-container:hover .rotate-right {
+  transform: rotate(90deg);
+}
+
+.hidden-select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+```
+
+### Result
+
+![solution demo](./solution-demo.png)
