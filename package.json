@@ -4,6 +4,8 @@
   "description": "A template with boilerplate structure for Hashnode's Github as source feature",
   "main": "index.js",
   "scripts": {
+    "dev": "markdown-preview --template default-dark --port 3000 --file",
+    "dev:light": "markdown-preview --template default --port 3000 --file",
     "pub": "cross-post run --local --ignore-image --public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,6 +20,7 @@
   },
   "homepage": "https://github.com/palmerusaf/blog#readme",
   "dependencies": {
+    "@mryhryki/markdown-preview": "^0.4.3",
     "cross-post-blog": "github:palmerusaf/cross-post#fix/issue#43"
   }
 }
